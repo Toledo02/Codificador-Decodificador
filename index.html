@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codificador e Decodificador</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="flex-container">
+        <div class="container">
+            <h1>Codificador e Decodificador de Texto</h1>
+            <textarea id="inputText" placeholder="Digite seu texto aqui"></textarea>
+            <div class="buttons">
+                <button onclick="codificar()">Codificar</button>
+                <button onclick="decodificar()">Decodificar</button>
+            </div>
+        </div>
+        <div class="output">
+            <img id="imagePlaceholder" src="img/High quality products 1 1.png" alt="Imagem inicial" style="width: 300px; display: block;">
+            <p id="placeholderText">Nenhuma mensagem encontrada</p>
+            <textarea class="resultado" id="outputText" style="display: none;" placeholder="Resultado"></textarea>
+            <button id="copyButton" onclick="copiarTexto()" style="display: none;">Copiar</button>
+        </div>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>
